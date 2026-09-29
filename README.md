@@ -2,7 +2,7 @@
 
 Aplikasi manajemen menu **Minuman & Makanan** berbasis **PHP (PDO) + MySQL + CSS (Box Model & Flexbox)**.
 
-> Nama: `ISI_NAMA` &nbsp;|&nbsp; NIM: `ISI_NIM`
+> Nama: `Riskia Nabila` &nbsp;|&nbsp; NIM: `250180008`
 
 ## Fitur
 
