@@ -37,11 +37,6 @@ product-manager/
 └── README.md
 ```
 
-## Mengganti brand
-
-Nama, tagline, dan inisial logo ada di 3 konstanta paling atas `config/helpers.php`
-(`APP_NAME`, `APP_TAGLINE`, `APP_INITIAL`). Warna ada di blok `:root` pada
-`public/assets/style.css` (`--ink`, `--primary`, `--accent`, `--bg`).
 
 ## Cara menjalankan (XAMPP)
 
@@ -70,12 +65,7 @@ Catatan menguji validasi server: atribut `required`/`min` di HTML dapat menghent
 di browser. Untuk melihat pesan dari server, hapus atributnya lewat DevTools (Inspect) lalu submit,
 atau kirim request dengan `curl`.
 
-## Refleksi keamanan
 
-- **Input**: dinormalisasi (`trim`) dan divalidasi ulang di server, tidak bergantung pada validasi browser.
-- **Query**: seluruh query yang memakai input user memakai prepared statement (PDO), termasuk `id` dan pencarian.
-- **Output**: semua data dari database dan dari user dicetak lewat `htmlspecialchars` (fungsi `e()`), sehingga XSS tidak tereksekusi.
-- **Alur request**: PRG mencegah data ganda saat refresh; delete memakai POST + token CSRF (`hash_equals`).
 
 ## Upload ke GitHub
 
