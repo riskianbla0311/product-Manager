@@ -67,17 +67,4 @@ atau kirim request dengan `curl`.
 
 
 
-## Upload ke GitHub
 
-```bash
-cd product-manager
-git init
-git add .
-git commit -m "Praktikum 3: Product Manager PHP MySQL"
-git branch -M main
-git remote add origin https://github.com/USERNAME/product-manager.git
-git push -u origin main
-```
-
-Buat dulu repository kosong bernama `product-manager` di github.com (tanpa README/gitignore
-agar tidak bentrok), lalu ganti `USERNAME` dengan username GitHub kamu.
